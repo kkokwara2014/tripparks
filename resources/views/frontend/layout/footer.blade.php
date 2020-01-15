@@ -1,6 +1,11 @@
 <footer>
     <div class="container">
-        <p>&copy; www.tripparks.com 2019. All Rights Reserved.</p>
+        <p>
+            &copy; <script>
+                document.write(new Date().getFullYear());
+            </script> www.tripparks.com | All rights reserved
+            {{-- &copy; www.tripparks.com 2019. All Rights Reserved. --}}
+        </p>
         <ul class="list-inline">
             <li class="list-inline-item">
                 <a href="#">Privacy</a>
@@ -31,6 +36,22 @@
         $(this).remove(); 
     });
 }, 5000);
+</script>
+
+<script>
+    $(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        $(".collapse").each(function(){
+            $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+        
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+            $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+            $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
 </script>
 
 </body>

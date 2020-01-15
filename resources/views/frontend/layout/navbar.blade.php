@@ -11,10 +11,10 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+          <a class="nav-link js-scroll-trigger" href="{{route('index')}}"><span class="fa fa-home"></span> Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+          <a class="nav-link js-scroll-trigger" href="#features">Check Vehicles</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
