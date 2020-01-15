@@ -59,7 +59,7 @@ alt=""></a>
         <div class="row">
             <div class="col-lg-1 my-auto">
                 <select name="states" id="states">
-                    <option value=""></option>
+                    
                 </select>
 
             </div>
