@@ -37,6 +37,18 @@
 }, 5000);
 </script>
 
+<script>
+    $(function () { 
+        var statesOptions;
+        $.getJSON('',function (results) {
+            $.each(results,function (i,states) {
+                statesOptions+="<option value='"+states.state+"'>"+states.state+"</option>";
+            });
+            
+        })
+     });
+</script>
+
 </body>
 
 </html>

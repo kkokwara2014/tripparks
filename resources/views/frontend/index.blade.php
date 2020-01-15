@@ -57,7 +57,12 @@ alt=""></a>
             <hr>
         </div>
         <div class="row">
-            <div class="col-lg-1 my-auto"></div>
+            <div class="col-lg-1 my-auto">
+                <select name="states" id="states">
+                    <option value=""></option>
+                </select>
+
+            </div>
             <div class="col-lg-10 my-auto">
                 <div class="container-fluid">
                     <div class="row" style="margin-top: -45px;">
@@ -77,15 +82,9 @@ alt=""></a>
                                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                            tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                                            assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                                            wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                            synth nesciunt you probably haven't heard of them accusamus labore
-                                            sustainable VHS.
+                                            <div style="border-left: 3px solid yellowgreen; padding-left: 5px;">
+                                                This is Okeyson.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -102,15 +101,9 @@ alt=""></a>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                            tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                                            assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                                            wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                            synth nesciunt you probably haven't heard of them accusamus labore
-                                            sustainable VHS.
+                                            <div style="border-left: 3px solid yellowgreen; padding-left: 5px;">
+                                                This is Peace Mass Transit (PMT).
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -127,15 +120,9 @@ alt=""></a>
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                         data-parent="#accordion">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                                            tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                                            assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                                            wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-                                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                                            synth nesciunt you probably haven't heard of them accusamus labore
-                                            sustainable VHS.
+                                            <div style="border-left: 3px solid yellowgreen; padding-left: 5px;">
+                                                This is ABC Motors.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
