@@ -39,14 +39,15 @@
 
 <script>
     $(function () { 
-        var statesOptions;
-        $.getJSON('ng-states-and-lgas.json',function (results) {
-            $.each(results,function (i,states) {
-                statesOptions+="<option value='"+states.name+"'>"+states.name+"</option>";
-                $('#state').html(statesOptions);
-            });
+        var _token=$('input[name=_token]').val();
+        $.ajax({
+            url:"{{ route('get.states') }}",
+            method:"POST",
+            data:{'id':id,' _token':_token},
+            success:function(data) {
+                $('#states').html(data);
+            }
         });
-
      });
 </script>
 

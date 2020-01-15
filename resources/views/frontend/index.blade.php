@@ -61,6 +61,7 @@ alt=""></a>
                 <select name="states" id="states">
                     
                 </select>
+                {{csrf_field()}}
 
             </div>
             <div class="col-lg-10 my-auto">
