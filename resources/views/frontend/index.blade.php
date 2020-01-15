@@ -53,7 +53,7 @@ alt=""></a>
     <div class="container">
         <div class="section-heading text-center">
             <h2>Available Vehicles in different Parks</h2>
-            <p class="text-muted">Tap on the Transportation Company to see!</p>
+            <p class="text-muted">Tap on the Transportation Company to see their vehicles and parks!</p>
             <hr>
         </div>
         <div class="row">

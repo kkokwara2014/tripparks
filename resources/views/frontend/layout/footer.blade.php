@@ -40,12 +40,13 @@
 <script>
     $(function () { 
         var statesOptions;
-        $.getJSON('',function (results) {
+        $.getJSON('ng-states-and-lgas.json',function (results) {
             $.each(results,function (i,states) {
-                statesOptions+="<option value='"+states.state+"'>"+states.state+"</option>";
+                statesOptions+="<option value='"+states.name+"'>"+states.name+"</option>";
+                $('#state').html(statesOptions);
             });
-            
-        })
+        });
+
      });
 </script>
 
