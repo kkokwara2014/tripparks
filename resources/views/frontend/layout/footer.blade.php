@@ -3,8 +3,7 @@
         <p>
             &copy; <script>
                 document.write(new Date().getFullYear());
-            </script> www.tripparks.com | All rights reserved
-            {{-- &copy; www.tripparks.com 2019. All Rights Reserved. --}}
+            </script> tripparks.com | All rights reserved
         </p>
         <ul class="list-inline">
             <li class="list-inline-item">

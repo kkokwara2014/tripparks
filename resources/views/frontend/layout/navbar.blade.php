@@ -10,7 +10,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link js-scroll-trigger" href="{{route('index')}}"><span class="fa fa-home"></span> Home</a>
         </li>
         <li class="nav-item">

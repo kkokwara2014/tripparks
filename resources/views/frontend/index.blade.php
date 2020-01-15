@@ -69,7 +69,7 @@ alt=""></a>
                                             <button class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapseOne" aria-expanded="false"
                                                 aria-controls="collapseOne">
-                                                Collapsible Group Item #1
+                                                Okeyson
                                             </button>
                                         </h5>
                                     </div>
@@ -95,7 +95,7 @@ alt=""></a>
                                             <button class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapseTwo" aria-expanded="false"
                                                 aria-controls="collapseTwo">
-                                                Collapsible Group Item #2
+                                                Peace Mass Transit
                                             </button>
                                         </h5>
                                     </div>
@@ -120,7 +120,7 @@ alt=""></a>
                                             <button class="btn btn-link collapsed" data-toggle="collapse"
                                                 data-target="#collapseThree" aria-expanded="false"
                                                 aria-controls="collapseThree">
-                                                Collapsible Group Item #3
+                                                ABC Motors
                                             </button>
                                         </h5>
                                     </div>
