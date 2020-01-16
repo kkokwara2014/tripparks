@@ -49,14 +49,14 @@ $('select[name="state"]').on('change', function() {
             type: "GET",
             dataType: "json",
             success:function(data) {
-                $('select[name="city"]').empty();
+                $('select[name="lga"]').empty();
                 $.each(data, function(key, value) {
-                    $('select[name="city"]').append('<option value="'+ value.id +'">'+ value.name +'</option>');
+                    $('select[name="lga"]').append('<option value="'+ value.id +'">'+ value.name +'</option>');
                 });
             }
         });
     }else{
-        $('select[name="city"]').empty();
+        $('select[name="lga"]').empty();
     }
 });
 

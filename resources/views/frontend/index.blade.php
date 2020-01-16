@@ -95,9 +95,9 @@ alt=""></a>
 
                 <div class="form-group">
 
-                    <label for="title">Select City:</label>
+                    <label for="title">Select LGA:</label>
 
-                    <select name="city" class="form-control" style="width:350px">
+                    <select name="lga" class="form-control" style="width:350px">
 
                     </select>
 
