@@ -38,66 +38,26 @@
 </script>
 
 <script>
-    $(document).ready(function(){
-        $('.dynamic').change(function(){
-        
-            if($(this).val() != '')
-            {
-                var select = $('#states').val();
-                var value = $(this).val();
-                var dependent = $(this).data('dependent');
-                var _token = $('input[name="_token"]').val();
-                $.ajax({
-                url:"{{ route('get.states') }}",
-                method:"POST",
-                data:{select:select, value:value, _token:_token, dependent:dependent},
-                success:function(result)
-                {
-                    $('#'+dependent).html(result);
-                }
-
-            })
-        }
-        });
-
-        $('#states').change(function(){
-            $('#lgas').val('');
-           
-        });
-
-}); 
-
-
+ 
 $(document).ready(function() {
 
 $('select[name="state"]').on('change', function() {
-
     var stateID = $(this).val();
-
     if(stateID) {
-
         $.ajax({
-
             url: '/myform/ajax/'+stateID,
-
             type: "GET",
-
             dataType: "json",
-
             success:function(data) {
-
                 $('select[name="city"]').empty();
-
                 $.each(data, function(key, value) {
-
-                    $('select[name="city"]').append('<option value="'+ key +'">'+ value +'</option>');
+                    $('select[name="city"]').append('<option value="'+ value.id +'">'+ value.name +'</option>');
                 });
             }
         });
     }else{
         $('select[name="city"]').empty();
     }
-
 });
 
 });

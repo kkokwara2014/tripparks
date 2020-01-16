@@ -95,9 +95,8 @@ class FrontController extends Controller
 
         $lgas=Park::where('location_id',$id)->orderBy('name','asc')->get();
 
-
-
-        return json_encode($lgas);
+        // return json_encode($lgas);
+        return response()->json($lgas);
 
     }
 }
