@@ -19,7 +19,9 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
 Route::get('/','FrontController@index')->name('index');
-Route::get('/get-states','FrontController@getStates')->name('get.states');
+// Route::get('/get-states','FrontController@getStates')->name('get.states');
+
+Route::post('dynamic_states/fetch', 'FrontController@fetch')->name('get.states');
 
 Auth::routes();
 
