@@ -60,13 +60,13 @@
         }
         });
 
-        $('#country').change(function(){
-            $('#state').val('');
-            $('#city').val('');
+        $('#states').change(function(){
+            $('#lgas').val('');
+           
         });
 
-        $('#state').change(function(){
-            $('#city').val('');
+        $('#states').change(function(){
+            $('#lgas').val('');
         });
 }); 
 </script>

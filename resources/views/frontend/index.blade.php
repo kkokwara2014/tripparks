@@ -59,7 +59,7 @@ alt=""></a>
         <div class="row">
             <div class="col-lg-1 my-auto">
 
-                <select name="state" id="state" class="dynamic" data-dependent="lgas">
+                <select name="states" id="states" class="dynamic" data-dependent="lgas">
                     <option value="">Select state</option>
                     @foreach($states as $state)
                     <option value="{{ $state->id}}">{{ $state->name }}</option>
