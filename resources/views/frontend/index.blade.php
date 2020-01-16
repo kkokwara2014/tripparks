@@ -59,21 +59,7 @@ alt=""></a>
         <div class="row">
             <div class="col-lg-1 my-auto">
 
-                <select name="states" id="states" class="dynamic" data-dependent="lgas">
-                    <option value="">Select state</option>
-                    @foreach($states as $state)
-                    <option value="{{ $state->id}}">{{ $state->name }}</option>
-                    @endforeach
-                </select>
-                <br>
-                <hr>
-                <div class="form-group">
-                    <select name="lgas" id="lgas" class="dynamic">
-                        <option value="">Select lgas</option>
-                    </select>
-                </div>
                 {{ csrf_field() }}
-
 
                 <div class="form-group">
 
