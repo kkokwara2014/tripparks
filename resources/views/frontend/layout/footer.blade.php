@@ -43,7 +43,7 @@
         
             if($(this).val() != '')
             {
-                var select = $(this).attr("id");
+                var select = $('#states').val();
                 var value = $(this).val();
                 var dependent = $(this).data('dependent');
                 var _token = $('input[name="_token"]').val();
@@ -65,9 +65,6 @@
            
         });
 
-        $('#states').change(function(){
-            $('#lgas').val('');
-        });
 }); 
 </script>
 
