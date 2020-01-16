@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
 Route::get('/','FrontController@index')->name('index');
-Route::post('/get-states','LocationController@getLocations')->name('get.states');
+Route::get('/get-states','FrontController@getStates')->name('get.states');
 
 Auth::routes();
 

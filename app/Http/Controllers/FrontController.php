@@ -8,18 +8,9 @@ use Illuminate\Http\Request;
 class FrontController extends Controller
 {
     public function index(){
+
         $states=Location::orderBy('name','asc')->get();
-
-        // $output='';
-        // if ($states->count()>0) {
-        //    foreach ($states as $state) {
-        //        $output.='<option value='.$state->id.'>'.$state->name.'</option>';
-        //    }
-        //    $output='';
-        //    echo $output;
-        // }
-
-        return view('frontend.index',compact('states'));
+        return view('frontend.index');
     }
     public function about(){
 
@@ -28,6 +19,18 @@ class FrontController extends Controller
     public function contact(){
 
         return view('frontend.contact');
+    }
+
+    public function getStates(Request $request){
+        $states=Location::orderBy('name','asc')->get();
+        $output='';
+        if ($states->count()>0) {
+           foreach ($states as $state) {
+               $output.='<option value='.$state->id.'>'.$state->name.'</option>';
+           }
+           $output='';
+           echo $output;
+        }
     }
     
 }

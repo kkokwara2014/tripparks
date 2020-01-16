@@ -38,17 +38,19 @@
 </script>
 
 <script>
-    $(function () { 
-        var _token=$('input[name=_token]').val();
+    $(document).ready(function(){
+        var _token = $('input[name="_token"]').val();
         $.ajax({
             url:"{{ route('get.states') }}",
-            method:"POST",
-            data:{'id':id,' _token':_token},
+            method:"GET",
+            data:{'_token':_token},
             success:function(data) {
-                $('#states').html(data);
+                // $('#states').html(data);
+
+                alert(data);
             }
         });
-     });
+    }); 
 </script>
 
 </body>
