@@ -6,6 +6,9 @@ use App\Location;
 use App\Park;
 use Illuminate\Http\Request;
 
+
+use DB;
+
 class FrontController extends Controller
 {
     public function index()
@@ -54,5 +57,47 @@ class FrontController extends Controller
             $output .= '<option value="' . $row->$dependent . '">' . $row->$dependent . '</option>';
         }
         echo $output;
+    }
+
+
+    public function myform()
+
+    {
+
+        // $states = DB::table("locations")->lists("name","id");
+
+        // return view('myform',compact('states'));
+
+        $states = Location::orderBy('name', 'asc')->get();
+        return view('frontend.index', compact('states'));
+
+    }
+
+
+    /**
+
+     * Get Ajax Request and restun Data
+
+     *
+
+     * @return \Illuminate\Http\Response
+
+     */
+
+    public function myformAjax($id)
+
+    {
+
+        // $lgas = DB::table("parks")
+        //             ->where("state_id",$id)
+        //             ->lists("name","id");
+
+
+        $lgas=Park::where('location_id',$id)->orderBy('name','asc')->get();
+
+
+
+        return json_encode($lgas);
+
     }
 }
