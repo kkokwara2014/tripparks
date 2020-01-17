@@ -4,27 +4,21 @@ namespace App\Http\Controllers;
 
 use App\Location;
 use App\Park;
-use Illuminate\Http\Request;
 
-
-use DB;
 
 class FrontController extends Controller
 {
     public function index()
     {
-
         $states = Location::orderBy('name', 'asc')->get();
         return view('frontend.index', compact('states'));
     }
     public function about()
     {
-
         return view('frontend.about');
     }
     public function contact()
     {
-
         return view('frontend.contact');
     }
    
@@ -32,7 +26,6 @@ class FrontController extends Controller
     {
         $states = Location::orderBy('name', 'asc')->get();
         return view('frontend.index', compact('states'));
-
     }
 
 

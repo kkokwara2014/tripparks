@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 use App\User;
 
@@ -51,7 +52,7 @@ class LoginController extends Controller
         return view('auth.login');
     }
 
-     /**
+    /**
      * Get the failed login response instance.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -83,10 +84,6 @@ class LoginController extends Controller
     public function userLogout(Request $request)
     {
         Auth::logout();
-        
-        // $this->guard()->logout();
-        // $request->session()->invalidate();
-
         return redirect(route('index'));
     }
 
