@@ -32,13 +32,13 @@
 <script>
     window.setTimeout(function() {
     $(".alert").fadeTo(500, 0).slideUp(500, function(){
-        $(this).remove(); 
+        $(this).remove();
     });
 }, 5000);
 </script>
 
 <script>
- 
+
 $(document).ready(function() {
 
 $('select[name="state"]').on('change', function() {
